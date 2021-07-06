@@ -17,6 +17,7 @@ ${INPUT_AWS_SECRET_ACCESS_KEY}
 ${INPUT_AWS_REGION}
 text
 EOF
+fi
 
 # Sync using our dedicated profile and suppress verbose messages.
 # All other flags are optional via the `args:` directive.
