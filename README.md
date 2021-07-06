@@ -56,8 +56,8 @@ jobs:
 
 | Key | Value | Suggested Type | Required | Default |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| `aws_access_key_id` | Your AWS Access Key. [More info here.](https://docs.aws.amazon.com/general/latest/gr/managing-aws-access-keys.html) | `secret env` | **Yes** | N/A |
-| `aws_secret_access_key` | Your AWS Secret Access Key. [More info here.](https://docs.aws.amazon.com/general/latest/gr/managing-aws-access-keys.html) | `secret env` | **Yes** | N/A |
+| `aws_access_key_id` | Your AWS Access Key. [More info here.](https://docs.aws.amazon.com/general/latest/gr/managing-aws-access-keys.html) | `secret env` | **Optional** | N/A |
+| `aws_secret_access_key` | Your AWS Secret Access Key. [More info here.](https://docs.aws.amazon.com/general/latest/gr/managing-aws-access-keys.html) | `secret env` | **Optional** | N/A |
 | `source` | The local file (or s3 key) you wish to cp. | `env` | Yes | N/A |
 | `dest` | The s3 key (or local file) you wish the file to be copied to. | `env` | Yes | N/A |
 | `aws_region` | The region where you created your bucket. Set to `us-east-1` by default. [Full list of regions here.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-available-regions) | `env` | No | `us-east-1` |
