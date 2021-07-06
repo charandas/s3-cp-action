@@ -24,13 +24,3 @@ sh -c "aws s3 cp ${INPUT_SOURCE} ${INPUT_DEST} \
               --no-progress \
               ${ENDPOINT_APPEND} ${INPUT_FLAGS} $*"
 
-# Clear out credentials after we're done.
-# We need to re-run `aws configure` with bogus input instead of
-# deleting ~/.aws in case there are other credentials living there.
-# https://forums.aws.amazon.com/thread.jspa?threadID=148833
-aws configure --profile s3-cp-action <<-EOF > /dev/null 2>&1
-null
-null
-null
-text
-EOF
